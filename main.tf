@@ -6,7 +6,7 @@ module "ec2" {
 }
 
 module "security_group" {
-  source = "./security"
+  source = "./modules/security"
   sg_name = "web_traffic"
   sg_ingress_port = 443
   sg_tags = "example_security_group"
