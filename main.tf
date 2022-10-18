@@ -3,6 +3,7 @@ module "ec2" {
   image_ami = "ami-830c94e3"
   instance_type = "t2.micro"
   tags = "ExampleAppServerInstance"
+  sg_id = module.security_group.sg_id
 }
 
 module "security_group" {
