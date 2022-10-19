@@ -1,0 +1,96 @@
+{
+    "InstanceProfiles": [
+        {
+            "Path": "/",
+            "InstanceProfileName": "ec2dynamo",
+            "InstanceProfileId": "AIPA5JH6DLQFOU6XRXCXP",
+            "Arn": "arn:aws:iam::913213447178:instance-profile/ec2dynamo",
+            "CreateDate": "2022-07-27T18:06:25+00:00",
+            "Roles": [
+                {
+                    "Path": "/",
+                    "RoleName": "dynamoREAD",
+                    "RoleId": "AROA5JH6DLQFDVJ2RUORB",
+                    "Arn": "arn:aws:iam::913213447178:role/dynamoREAD",
+                    "CreateDate": "2022-07-27T18:06:03+00:00",
+                    "AssumeRolePolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Effect": "Allow",
+                                "Principal": {
+                                    "Service": "ec2.amazonaws.com"
+                                },
+                                "Action": "sts:AssumeRole"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Path": "/",
+            "InstanceProfileName": "ec2dynamoREAD",
+            "InstanceProfileId": "AIPA5JH6DLQFHY67MTFTT",
+            "Arn": "arn:aws:iam::913213447178:instance-profile/ec2dynamoREAD",
+            "CreateDate": "2022-07-26T17:10:21+00:00",
+            "Roles": []
+        },
+        {
+            "Path": "/",
+            "InstanceProfileName": "EC2FULLACCESS",
+            "InstanceProfileId": "AIPA5JH6DLQFFMTQUBLOE",
+            "Arn": "arn:aws:iam::913213447178:instance-profile/EC2FULLACCESS",
+            "CreateDate": "2022-07-13T16:07:33+00:00",
+            "Roles": [
+                {
+                    "Path": "/",
+                    "RoleName": "EC2FULLACCESS",
+                    "RoleId": "AROA5JH6DLQFN562A5HJL",
+                    "Arn": "arn:aws:iam::913213447178:role/EC2FULLACCESS",
+                    "CreateDate": "2022-07-13T16:07:31+00:00",
+                    "AssumeRolePolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Effect": "Allow",
+                                "Principal": {
+                                    "Service": "ec2.amazonaws.com"
+                                },
+                                "Action": "sts:AssumeRole"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Path": "/",
+            "InstanceProfileName": "project_profile",
+            "InstanceProfileId": "AIPA5JH6DLQFPZZOB2DTT",
+            "Arn": "arn:aws:iam::913213447178:instance-profile/project_profile",
+            "CreateDate": "2022-10-19T14:57:05+00:00",
+            "Roles": [
+                {
+                    "Path": "/",
+                    "RoleName": "ec2_project_role",
+                    "RoleId": "AROA5JH6DLQFCMUKCLTQE",
+                    "Arn": "arn:aws:iam::913213447178:role/ec2_project_role",
+                    "CreateDate": "2022-10-19T14:43:34+00:00",
+                    "AssumeRolePolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Effect": "Allow",
+                                "Principal": {
+                                    "Service": "ec2.amazonaws.com"
+                                },
+                                "Action": "sts:AssumeRole"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

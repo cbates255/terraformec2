@@ -5,6 +5,7 @@ module "ec2" {
   tags          = "ExampleAppServerInstance"
   sg_id         = module.security_group.group_id
   profile       = module.IAM.instance_profile
+  key_name      = "latestpair"
 }
 
 module "security_group" {
