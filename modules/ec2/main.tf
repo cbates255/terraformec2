@@ -1,8 +1,3 @@
-data "template_file" "boot_script" {
-  template = "${file("${path.cwd}/boot_script.sh")}"
-}
-
-
 resource "aws_instance" "app_server" {
   ami           = var.image_ami
   instance_type = var.instance_type
@@ -13,8 +8,8 @@ resource "aws_instance" "app_server" {
   sudo yum update -y
   sudo yum upgrade -y
   sudo yum install httpd -y
-  sudo systemctl enable nginx
-  sudo systemctl start nginx
+  sudo systemctl enable httpd
+  sudo systemctl start httpd
   EOF
   tags = {
     Name = var.tags
