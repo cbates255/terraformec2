@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"ec2","Source":"./modules/ec2","Dir":"modules/ec2"},{"Key":"security_group","Source":"./modules/security","Dir":"modules/security"},{"Key":"","Source":"","Dir":"."}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"IAM","Source":"./modules/IAM","Dir":"modules/IAM"},{"Key":"ec2","Source":"./modules/ec2","Dir":"modules/ec2"},{"Key":"security_group","Source":"./modules/security","Dir":"modules/security"}]}

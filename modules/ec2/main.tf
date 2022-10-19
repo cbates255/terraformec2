@@ -3,6 +3,7 @@ resource "aws_instance" "app_server" {
   instance_type = var.instance_type
   associate_public_ip_address = true
   security_groups = [ var.sg_id ]
+  iam_instance_profile = var.profile
   user_data = <<EOF
   #!/bin/bash
   sudo yum update -y
